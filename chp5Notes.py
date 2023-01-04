@@ -65,3 +65,62 @@ if "Brendan" in students:
     print("Yes he is")
 else:
     print("Nope, he is a loser")
+    
+print()
+print()
+example = [1,2,3,4]
+example[3] = 10
+print(example)
+
+print()
+print()
+
+numbers = [2, 3, 4, 5]
+for index in range(len(numbers)):
+    numbers[index] = numbers[index] ** 2
+    
+print(numbers)
+
+print()
+print()
+
+sentence = "This example has five words."
+words = sentence.split()
+print(words)
+
+for index in range(len(words)):
+    words[index] = words[index].upper()
+    
+print(words)
+
+
+print("\n\n")
+print("Searching Lists")
+
+aList = [34, 45, 67, 82, 91]
+target = 67 #int(input("Please enter a target number: "))
+
+if target in aList:
+    print("The number", target, "is located at index:", aList.index(target))
+else:
+    print(-1)
+    
+print("\n\n")
+print("sorting Lists")
+
+example = [5, 2, 7, 19, 45, 3, 24, 1]
+print(example)
+
+example.sort()
+print(example)
+
+print("\n\n")
+print("Aliasing and Side Effects")
+first = [10, 20, 30]
+second = first
+print("first list is: ", first)
+print("second list is: ", second)
+
+first[1] = 99
+print("first list is: ", first)
+print("second list is: ", second)
