@@ -124,3 +124,27 @@ print("second list is: ", second)
 first[1] = 99
 print("first list is: ", first)
 print("second list is: ", second)
+
+print("\n\n\n")
+print("TUPLES----------------------------")
+
+print("A Tuple is a linear, immutable collection")
+print("Tuple Examples:")
+
+fruits = ("apples", "banana")
+meats = ("fish", "poultry")
+
+food = meats + fruits
+print(food)
+
+veggies = ["celery", "beans"]
+print(veggies, "is a list")
+
+veggies = tuple(veggies)
+print(veggies, "now it is a tuple")
+
+badSingleton = (3)
+print(badSingleton)
+
+goodSingleton = (3,)
+print(goodSingleton)
